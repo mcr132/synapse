@@ -1,0 +1,22 @@
+{
+	"name": "nyctaxi_yellow_tripdata_2020_02",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "synapsewks0-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "yellow_tripdata_2020-02.csv",
+				"folderPath": "nyctaxi",
+				"fileSystem": "root"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
